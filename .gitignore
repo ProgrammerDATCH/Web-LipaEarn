@@ -1,0 +1,31 @@
+# Ignore the vendor directory
+/vendor
+
+# Ignore the node_modules directory
+/node_modules
+
+# Ignore compiled assets
+/public/css
+/public/js
+/public/mix-manifest.json
+/public/storage
+
+# Ignore user uploads
+/storage/app/public
+
+# Ignore environment configuration
+.env
+
+# Ignore composer's lock file
+composer.lock
+
+# Ignore NPM's lock file
+package-lock.json
+
+# Ignore Laravel's logs
+/storage/logs/*.log
+
+# Ignore any other temporary files or folders
+*.swp
+.DS_Store
+Thumbs.db

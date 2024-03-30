@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:9000" # Map port 8000 on the host to port 9000 on the container
+    volumes:
+      - .:/var/www
+    networks:
+      - laravel_net
+
+networks:
+  laravel_net:
